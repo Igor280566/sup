@@ -5,7 +5,7 @@
 }
 
 body {
- /*font-family: 'Comfortaa', cursive;*/
+ 
 font-family: 'Inter', sans-serif;
 font-weight: 400;
 font-size: 18px;
@@ -20,4 +20,141 @@ a {
 
 h1,h2,h3,h4,h5,h6 {
   margin: 0;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.header {
+  background-image: url(../img/header-bg.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/header-decor.svg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 456px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(55%) ;
+  z-index: 2;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/header-decor.svg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 456px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(85%) rotate(180deg);
+  z-index: 3;
+}
+
+.header__top {
+  display: flex;
+  justify-content:flex-end;
+  align-items: flex-start;
+  padding: 57px 0;
+  gap: 100px;
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 140px;
+}
+.logo path {
+  transition: fill .3s ease;
+}
+.logo:hover path {
+  fill: #0093A1;
+}
+.header__btn {
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  background-color: #262C27;
+  padding: 12px 70px;
+  border: none;
+  cursor: pointer;
+}
+.header__btn:hover {
+  color: #262C27;
+  background-color: #B9C400;
+  transition: .3s ease;
+}
+.header__phone {
+  color: #262C27;
+}
+.header__content {
+  
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+.header__content-box {
+  max-width: 550px;
+  text-align: center;
+  margin-right: 30px;
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.header__title {
+font-size: 64px;
+line-height: 71px;
+margin-bottom: 20px;
+}
+.header__text {
+font-size: 24px;
+line-height: 27px;
+
+}
+.header__decor-text {
+  position: absolute;
+  bottom: 0;
+  color: #0093A1;
+}
+.header__decor-text--one {
+font-weight: 400;
+font-size: 130px;
+line-height: 145px;
+opacity: 0.3;
+z-index: 1;
+top: 102px;
+left: 855px;
+}
+.header__decor-text--two {
+font-weight: 400;
+font-size: 130px;
+line-height: 145px;
+opacity: 0.3;
+top: 210px;
+left: 500px;
+z-index: 4;
+}
+.header__decor-text--three {
+font-family: 'Inter';
+font-style: italic;
+font-weight: 300;
+font-size: 32px;
+line-height: 39px;
+text-align: center;
+top: 360px;
+left: 860px;
+z-index: 4;
 }
