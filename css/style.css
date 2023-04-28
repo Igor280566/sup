@@ -2,5 +2,8 @@ body {
 font-family: 'Inter', sans-serif;
 font-family: 'Tinos', serif;
 font-family: 'Comfortaa', cursive;
-
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+color: #262C27;
 }
