@@ -99,7 +99,7 @@ h1,h2,h3,h4,h5,h6,p {
   color: #262C27;
 }
 .header__content {
-  
+  min-height: calc(100vh+(-100px));
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -126,7 +126,6 @@ line-height: 27px;
 }
 .header__decor-text {
   position: absolute;
-  bottom: 0;
   color: #0093A1;
 }
 .header__decor-text--one {
